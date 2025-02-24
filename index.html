@@ -11,11 +11,20 @@
             padding: 0;
             background-color: #f4f4f4;
             text-align: center;
+            color: #333;
         }
         header {
-            background-color: #1f2937;
+            background-color: #2c3e50;
             color: white;
-            padding: 20px;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
         }
         nav a {
             margin: 0 15px;
@@ -30,15 +39,27 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
         .profile-img {
             width: 200px;
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
+            margin-top: 20px;
+        }
+        .project-card {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .project-card h3 {
+            margin-top: 0;
         }
         footer {
-            background-color: #1f2937;
+            background-color: #2c3e50;
             color: white;
             padding: 10px;
             margin-top: 20px;
@@ -58,19 +79,31 @@
     
     <div class="container" id="about">
         <h2>About Me</h2>
-        <img src="https://via.placeholder.com/200" alt="Your Profile" class="profile-img">
-        <p>I am passionate about AWS cybersecurity and empowering young African women in tech.</p>
-        <p>My goal is to secure cloud infrastructures while mentoring the next generation of women in technology.</p>
+        <img src="images/your-image.jpg" alt="Your Profile" class="profile-img">
+        <p>I am a dedicated cybersecurity enthusiast with a deep passion for securing cloud environments and empowering the next generation of African women in tech. My unique drive stems from my commitment to mastering AWS security while fostering a community where young African ladies can thrive in technology.</p>
+        <p>My journey in cybersecurity is fueled by hands-on experience in securing AWS infrastructures, focusing on threat detection, identity management, and compliance. Through continuous learning, certifications, and real-world application, I strive to become an AWS Security Architect, ensuring robust cloud security for organizations worldwide.</p>
+        <p>Beyond my personal growth, I am committed to mentorship and advocacy, inspiring young African women to break barriers in tech. By engaging in cybersecurity forums, sharing insights, and participating in industry discussions, I aim to create opportunities for aspiring female tech professionals to excel in cloud security.</p>
+        <p>My job in AWS cybersecurity enables me to live out this passion by providing the expertise and platform needed to contribute to a more secure digital world while uplifting and guiding the next generation of African women in technology.</p>
     </div>
     
     <div class="container" id="portfolio">
         <h2>Portfolio</h2>
         <p>Here are some of my key projects in AWS cybersecurity:</p>
-        <ul>
-            <li>Project 1 - AWS Security Implementation</li>
-            <li>Project 2 - Identity & Access Management (IAM) Solutions</li>
-            <li>Project 3 - Threat Detection & Incident Response</li>
-        </ul>
+        <div class="project-card">
+            <h3>AWS Security Implementation</h3>
+            <p>Implemented advanced AWS security measures to secure cloud infrastructures for clients. Focused on identity management, threat detection, and incident response.</p>
+            <p>Technologies used: AWS IAM, CloudTrail, CloudWatch</p>
+        </div>
+        <div class="project-card">
+            <h3>Identity & Access Management (IAM) Solutions</h3>
+            <p>Created IAM policies and configurations to enhance the security of cloud environments, ensuring compliance with industry standards.</p>
+            <p>Technologies used: AWS IAM, AWS SSO</p>
+        </div>
+        <div class="project-card">
+            <h3>Threat Detection & Incident Response</h3>
+            <p>Developed automated solutions for threat detection and incident response to improve the security posture of clients' AWS accounts.</p>
+            <p>Technologies used: AWS GuardDuty, CloudWatch, Lambda</p>
+        </div>
     </div>
     
     <div class="container" id="contact">
